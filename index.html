@@ -13,66 +13,31 @@
 			font-family: 'Verdana';
 			margin: 0px;
 			}
-		
-			.sidebar {
-			  margin: 0;
-			  padding: 0;
-			  width: 400px;
-			  background-color: #ffffff;
-			  position: fixed;
-			  height: 100%;
-			  overflow: auto;
-			}
-			
-			.sidebar a {
-			  display: block;
-			  color: black;
-			  padding: 16px;
-			  text-decoration: none;
-			}
-			 
-			.sidebar a.active {
-			  background-color: #04AA6D;
-			  color: white;
-			}
-			
-			.sidebar a:hover:not(.active) {
-			  background-color: #555;
-			  color: white;
-			}
-			
-			div.content {
-			  margin-left: 0px;
-			  padding: 1px 16px;
-			  height: 100%;
-			}
-			
-			@media screen and (max-width: 700px) {
-			  .sidebar {
-			    width: 100%;
-			    height: auto;
-			    position: relative;
-			  }
-			  .sidebar a {float: left;}
-			  div.content {margin-left: 0;}
-			}
-			
-			@media screen and (max-width: 400px) {
-			  .sidebar a {
-			    text-align: center;
-			    float: none;
-			  }
-			}
-				
-		</style>
+			</style>
     </head>
 	<body>
-	<div class="sidebar">
-  <a class="active" href="#home">Page Principale</a>
-  <a href="#news">Menu</a>
-  <a href="#contact">Voyage Parfait</a>
-  <a href="#about">Poeme</a>
-</div>
+	<main class="main">
+  <aside class="sidebar">
+    <nav class="nav">
+      <ul>
+        <li class="active"><a href="#">Welcome</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Get In Touch</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="twitter">
+    <div class="container">
+      <a target="_blank" href="https://twitter.com/ReisnerShawn">
+        <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+      </a>
+      <p>Follow me</p>
+      <p>on Twitter!</p>
+    </div>
+  </section>
+</main>
 	<center>
 	<h1>Liens</h1>
 		</center>
