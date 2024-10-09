@@ -4,7 +4,66 @@
         <title>Poème</title>
         <meta charset="utf-8">
     </head>
-    <body style= 'background-color: #ADD8E6'>
+	<style>margin: 0px;
+			}	
+			.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 32px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #ADD8E6;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 32px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+			</style>
+    </head>
+	<body style= 'background-color: #ADD8E6'>
+		<div class="sidebar">
+  <a class="active" href="index.html">Page Principale</a>
+  <a href="poeme.html">Poeme</a>
+  <a href="menu.html">Menu</a>
+  <a href="voyage.html">Voyage Parfait</a>
+</div>
 	<h1><center>Poème</center></h1>
 	<p> <center>Dans le jardin des rêves, où le vent murmure,<br>
 Les fleurs dansent en silence, effleurant l'azur.<br>
