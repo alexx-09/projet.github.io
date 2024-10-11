@@ -59,3 +59,14 @@ div.content {
 		float: none;
 	}
 }
+
+.content {
+	width: 80%;
+	padding: 20px;
+	margin-left: auto; /* Moves content to the right */
+}
+
+img {
+	display: block;
+	margin-bottom: 20px;
+}
