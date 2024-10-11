@@ -10,7 +10,7 @@ body {
 .sidebar {
 	margin: 0;
 	padding: 0;
-	width: 250px; /* Reduced width for better mobile responsiveness */
+	width: 500px;
 	background-color: #f1f1f1;
 	position: fixed;
 	height: 100%;
@@ -20,7 +20,7 @@ body {
 .sidebar a {
 	display: block;
 	color: black;
-	padding: 16px; /* Reduced padding for better space management */
+	padding: 32px;
 	text-decoration: none;
 }
  
@@ -34,11 +34,11 @@ body {
 	color: white;
 }
 
-.content {
-	margin-left: 250px; /* Adjusted to match new sidebar width */
-	padding: 20px; /* Adjusted padding for better spacing */
+div.content {
+	margin-left: 500px; /* Pushes the content to the right of the sidebar */
+	padding: 1px 32px;
 	height: 1000px;
-	width: calc(100% - 250px); /* Adjusted calculation */
+	width: calc(100% - 500px); /* Makes sure the content takes up the remaining space */
 }
 
 img {
@@ -48,22 +48,22 @@ img {
 
 @media screen and (max-width: 700px) {
 	.sidebar {
-		width: 100%; /* Full width on smaller screens */
+		width: 100%;
 		height: auto;
 		position: relative; 
 	}
 	.sidebar a {
-		float: left; /* Keep links aligned */
+		float: left;
 	}
-	.content {
-		margin-left: 0; /* Reset margin for smaller screens */
-		width: 100%; /* Full width */
+	div.content {
+		margin-left: 0;
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 400px) {
 	.sidebar a {
-		text-align: center; /* Center links */
-		float: none; /* Remove float for smaller screens */
+		text-align: center;
+		float: none;
 	}
 }
