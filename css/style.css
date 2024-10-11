@@ -6,6 +6,7 @@ body {
 	font-family: 'Courier New';
 	margin: 0px;
 }	
+
 .sidebar {
 	margin: 0;
 	padding: 0;
@@ -34,9 +35,15 @@ body {
 }
 
 div.content {
-	margin-left: 200px;
+	margin-left: 500px; /* Pushes the content to the right of the sidebar */
 	padding: 1px 32px;
 	height: 1000px;
+	width: calc(100% - 500px); /* Makes sure the content takes up the remaining space */
+}
+
+img {
+    display: block;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -50,6 +57,7 @@ div.content {
 	}
 	div.content {
 		margin-left: 0;
+		width: 100%;
 	}
 }
 
