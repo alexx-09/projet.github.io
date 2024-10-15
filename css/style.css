@@ -5,6 +5,7 @@ body {
 	background-attachment: fixed;
 	font-family: 'Courier New';
 	margin: 0px;
+	list-style-position: inside; 
 }	
 .sidebar {
 	margin: 0;
