@@ -59,3 +59,11 @@ div.content {
 		float: none;
 	}
 }
+
+h1 {
+	text-align: right;
+}
+
+p {
+	text-align: right;
+}
