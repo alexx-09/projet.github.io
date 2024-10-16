@@ -1,3 +1,4 @@
+/* Styles pour le corps de la page */
 body {
 	background-color: #adbee6;
 	background-repeat: no-repeat;
@@ -5,8 +6,9 @@ body {
 	background-attachment: fixed;
 	font-family: 'Courier New';
 	margin: 0px;
-	list-style-position: inside; 
 }	
+
+/* Barre de navigation */
 .sidebar {
 	margin: 0;
 	padding: 0;
@@ -17,38 +19,40 @@ body {
 	overflow: auto;
 }
 
+/* Liens de la barre de navigation */
 .sidebar a {
 	display: block;
 	color: black;
 	padding: 32px;
 	text-decoration: none;
 }
- 
+
+/* Lien actif */
 .sidebar a.active {
 	background-color: #ADD8E6;
 	color: white;
 }
 
+/* Effet de survol */
 .sidebar a:hover:not(.active) {
 	background-color: #555;
 	color: white;
 }
 
+/* Contenu principal */
 div.content {	
 	margin-left: 350px;
 	padding: 1px 32px;
 	height: 1000px;
-	text-align: center
+	text-align: center;
 }
 
+/* Responsive */
 @media screen and (max-width: 700px) {
 	.sidebar {
 		width: 100%;
 		height: auto;
 		position: relative; 
-	}
-	.sidebar a {
-		float: left;
 	}
 	div.content {
 		margin-left: 0;
@@ -62,37 +66,42 @@ div.content {
 	}
 }
 
+/* Titres */
 h2 {
 	font-size: 50px;
 }
 
+/* Paragraphes voyage */
 .voyage p {
 	font-size: 30px;
 }
 
+/* Lignes de tableau cliquables */
 tr.clickable-row {
-        cursor: pointer;
+	cursor: pointer;
 }
 
+/* Tableau */
 table {
-    width: 60%;
-    margin: 0 auto;
-    border-collapse: collapse;
+	width: 60%;
+	margin: 0 auto;
+	border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+	border: 1px solid #ddd;
+	padding: 8px;
 }
 
 th {
-    background-color: lightblue;
+	background-color: lightblue;
 }
 
 tr:hover {
-    background-color: #555;
+	background-color: #555;
 }
 
+/* Texte poème */
 .text-poeme {
-    font-size: 30px;
+	font-size: 30px;
 }
