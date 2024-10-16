@@ -4,6 +4,12 @@
     <title>Menu</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='css/style.css'>
+    <style>
+        /* Rendre les lignes du tableau cliquables */
+        tr.clickable-row {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
@@ -17,88 +23,88 @@
     <div class="content" style='text-align: center'>
         <h2>Menu</h2>
 
-        <!-- Summary Table -->
-        <table border="1" style="width: 100%; text-align: left; margin-bottom: 30px;">
+        <!-- Tableau récapitulatif compact avec des lignes cliquables -->
+        <table border="1" style="width: 60%; margin: 0 auto; text-align: left;">
             <tr>
                 <th>Jour</th>
                 <th>Nom du Plat</th>
                 <th>Prix</th>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day1';">
                 <td>Jour 1</td>
                 <td>Salade de Poulet Grillé</td>
                 <td>12,50 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day2';">
                 <td>Jour 2</td>
                 <td>Tofu Sauté et Légumes</td>
                 <td>10,00 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day3';">
                 <td>Jour 3</td>
                 <td>Ragoût de Bœuf et Légumes</td>
                 <td>15,00 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day4';">
                 <td>Jour 4</td>
                 <td>Curry de Lentilles et Légumes</td>
                 <td>9,00 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day5';">
                 <td>Jour 5</td>
                 <td>Saumon Cuit au Four avec Asperges</td>
                 <td>18,00 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day6';">
                 <td>Jour 6</td>
                 <td>Wrap de Pois Chiches et Avocat</td>
                 <td>8,50 $ CAD</td>
             </tr>
-            <tr>
+            <tr class="clickable-row" onclick="window.location='#day7';">
                 <td>Jour 7</td>
                 <td>Frittata de Légumes et Fromage</td>
                 <td>7,50 $ CAD</td>
             </tr>
         </table>
 
-        <!-- Dish 1 -->
-        <h3>Jour 1 : Salade de Poulet Grillé</h3>
+        <!-- Plat 1 -->
+        <h3 id="day1">Jour 1 : Salade de Poulet Grillé</h3>
         <p><strong>Ingrédients :</strong> Poitrine de poulet grillée, feuilles mélangées (épinards, roquette, romaine),<br> tomates cerises, concombre, avocat, vinaigrette à l'huile d'olive et au vinaigre balsamique,<br> quinoa en accompagnement</p>
         <p><strong>Prix :</strong> 12,50 $ CAD</p>
         <hr>
 
-        <!-- Dish 2 -->
-        <h3>Jour 2 : Tofu Sauté et Légumes</h3>
+        <!-- Plat 2 -->
+        <h3 id="day2">Jour 2 : Tofu Sauté et Légumes</h3>
         <p><strong>Ingrédients :</strong> Tofu ferme, brocoli, poivrons, pois mange-tout, ail, gingembre, sauce soja, riz brun</p>
         <p><strong>Prix :</strong> 10,00 $ CAD</p>
         <hr>
 
-        <!-- Dish 3 -->
-        <h3>Jour 3 : Ragoût de Bœuf et Légumes</h3>
+        <!-- Plat 3 -->
+        <h3 id="day3">Jour 3 : Ragoût de Bœuf et Légumes</h3>
         <p><strong>Ingrédients :</strong> Morceaux de bœuf maigre, carottes, pommes de terre, céleri, oignon, ail, bouillon de bœuf, herbes (thym, laurier), pain complet</p>
         <p><strong>Prix :</strong> 15,00 $ CAD</p>
         <hr>
 
-        <!-- Dish 4 -->
-        <h3>Jour 4 : Curry de Lentilles et Légumes</h3>
+        <!-- Plat 4 -->
+        <h3 id="day4">Jour 4 : Curry de Lentilles et Légumes</h3>
         <p><strong>Ingrédients :</strong> Lentilles, tomates en dés, lait de coco, épices à curry, épinards, poivrons, riz basmati</p>
         <p><strong>Prix :</strong> 9,00 $ CAD</p>
         <hr>
 
-        <!-- Dish 5 -->
-        <h3>Jour 5 : Saumon Cuit au Four avec Asperges</h3>
+        <!-- Plat 5 -->
+        <h3 id="day5">Jour 5 : Saumon Cuit au Four avec Asperges</h3>
         <p><strong>Ingrédients :</strong> Filet de saumon, citron, herbes, asperges rôties, quinoa ou patate douce</p>
         <p><strong>Prix :</strong> 18,00 $ CAD</p>
         <hr>
 
-        <!-- Dish 6 -->
-        <h3>Jour 6 : Wrap de Pois Chiches et Avocat</h3>
+        <!-- Plat 6 -->
+        <h3 id="day6">Jour 6 : Wrap de Pois Chiches et Avocat</h3>
         <p><strong>Ingrédients :</strong> Avocat écrasé, pois chiches, citron vert, coriandre, tortilla de blé complet, laitue, tomate, concombre, frites de patate douce</p>
         <p><strong>Prix :</strong> 8,50 $ CAD</p>
         <hr>
 
-        <!-- Dish 7 -->
-        <h3>Jour 7 : Frittata de Légumes et Fromage</h3>
+        <!-- Plat 7 -->
+        <h3 id="day7">Jour 7 : Frittata de Légumes et Fromage</h3>
         <p><strong>Ingrédients :</strong> Œufs, épinards, tomates, fromage feta, salade d'accompagnement, pain complet</p>
         <p><strong>Prix :</strong> 7,50 $ CAD</p>
         <hr>
