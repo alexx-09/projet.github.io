@@ -69,3 +69,7 @@ h2 {
 .voyage p {
 	font-size: 30px;
 }
+
+tr.clickable-row {
+        cursor: pointer;
+}
