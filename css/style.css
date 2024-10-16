@@ -73,3 +73,9 @@ h2 {
 tr.clickable-row {
         cursor: pointer;
 }
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
