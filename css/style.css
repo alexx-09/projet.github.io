@@ -92,3 +92,7 @@ th {
 tr:hover {
     background-color: #555;
 }
+
+.text-poeme {
+    font-size: 30px;
+}
