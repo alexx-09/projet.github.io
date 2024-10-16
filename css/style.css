@@ -1,109 +1,94 @@
-<!DOCTYPE HTML>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Menu</title>
-    <!-- Lien vers le fichier CSS externe pour un style cohérent sur toutes les pages -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Barre de navigation -->
-    <div class="sidebar">
-        <a href="index.html">Page Principale</a>
-        <a href="poeme.html">Poème</a>
-        <a class="active" href="menu.html">Menu</a>
-        <a href="voyage.html">Voyage Parfait</a>
-        <a href="biographie.html">Biographie</a>
-    </div>
+body {
+	background-color: #adbee6;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Courier New';
+	margin: 0px;
+	list-style-position: inside; 
+}	
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
 
-    <!-- Zone de contenu principal -->
-    <div class="content">
-        <h2>Menu</h2>
+.sidebar a {
+	display: block;
+	color: black;
+	padding: 32px;
+	text-decoration: none;
+}
+ 
+.sidebar a.active {
+	background-color: #ADD8E6;
+	color: white;
+}
 
-        <!-- Tableau avec contenu cliquable pour chaque plat du jour -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Jour</th>
-                    <th>Nom du Plat</th>
-                    <th>Prix</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Chaque ligne du tableau représente un plat avec des liens -->
-                <tr class="clickable-row">
-                    <td><a href="#jour1">Jour 1</a></td>
-                    <td><a href="#jour1">Salade de Poulet Grillé</a></td>
-                    <td>12,50 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour2">Jour 2</a></td>
-                    <td><a href="#jour2">Tofu Sauté et Légumes</a></td>
-                    <td>10,00 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour3">Jour 3</a></td>
-                    <td><a href="#jour3">Ragoût de Bœuf et Légumes</a></td>
-                    <td>15,00 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour4">Jour 4</a></td>
-                    <td><a href="#jour4">Curry de Lentilles et Légumes</a></td>
-                    <td>9,00 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour5">Jour 5</a></td>
-                    <td><a href="#jour5">Saumon Cuit au Four avec Asperges</a></td>
-                    <td>18,00 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour6">Jour 6</a></td>
-                    <td><a href="#jour6">Wrap de Pois Chiches et Avocat</a></td>
-                    <td>8,50 $ CAD</td>
-                </tr>
-                <tr class="clickable-row">
-                    <td><a href="#jour7">Jour 7</a></td>
-                    <td><a href="#jour7">Frittata de Légumes et Fromage</a></td>
-                    <td>7,50 $ CAD</td>
-                </tr>
-            </tbody>
-        </table>
+.sidebar a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
 
-        <!-- Détails de chaque plat -->
-        <h3 id="jour1">Jour 1 : Salade de Poulet Grillé</h3>
-        <p><strong>Ingrédients :</strong> Poitrine de poulet grillée,<br> feuilles mélangées (épinards, roquette, romaine),<br> tomates cerises,<br> concombre,<br> avocat,<br> vinaigrette à l'huile d'olive et au vinaigre balsamique,<br> quinoa en accompagnement</p>
-        <p><strong>Prix :</strong> 12,50 $ CAD</p>
-        <hr>
+div.content {	
+	margin-left: 350px;
+	padding: 1px 32px;
+	height: 1000px;
+	text-align: center
+}
 
-        <h3 id="jour2">Jour 2 : Tofu Sauté et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Tofu ferme,<br> brocoli,<br> poivrons,<br> pois mange-tout,<br> ail,<br> gingembre,<br> sauce soja,<br> riz brun</p>
-        <p><strong>Prix :</strong> 10,00 $ CAD</p>
-        <hr>
+@media screen and (max-width: 700px) {
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: relative; 
+	}
+	.sidebar a {
+		float: left;
+	}
+	div.content {
+		margin-left: 0;
+	}
+}
 
-        <h3 id="jour3">Jour 3 : Ragoût de Bœuf et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Morceaux de bœuf maigre,<br> carottes,<br> pommes de terre,<br> céleri,<br> oignon,<br> ail,<br> bouillon de bœuf,<br> herbes (thym, laurier),<br> pain complet</p>
-        <p><strong>Prix :</strong> 15,00 $ CAD</p>
-        <hr>
+@media screen and (max-width: 400px) {
+	.sidebar a {
+		text-align: center;
+		float: none;
+	}
+}
 
-        <h3 id="jour4">Jour 4 : Curry de Lentilles et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Lentilles,<br> tomates en dés,<br> lait de coco,<br> épices à curry,<br> épinards,<br> poivrons,<br> riz basmati</p>
-        <p><strong>Prix :</strong> 9,00 $ CAD</p>
-        <hr>
+h2 {
+	font-size: 50px;
+}
 
-        <h3 id="jour5">Jour 5 : Saumon Cuit au Four avec Asperges</h3>
-        <p><strong>Ingrédients :</strong> Filet de saumon,<br> citron,<br> herbes,<br> asperges rôties,<br> quinoa ou patate douce</p>
-        <p><strong>Prix :</strong> 18,00 $ CAD</p>
-        <hr>
+.voyage p {
+	font-size: 30px;
+}
 
-        <h3 id="jour6">Jour 6 : Wrap de Pois Chiches et Avocat</h3>
-        <p><strong>Ingrédients :</strong> Avocat écrasé,<br> pois chiches,<br> citron vert,<br> coriandre,<br> tortilla de blé complet,<br> laitue,<br> tomate,<br> concombre,<br> frites de patate douce</p>
-        <p><strong>Prix :</strong> 8,50 $ CAD</p>
-        <hr>
+tr.clickable-row {
+        cursor: pointer;
+}
 
-        <h3 id="jour7">Jour 7 : Frittata de Légumes et Fromage</h3>
-        <p><strong>Ingrédients :</strong> Œufs,<br> épinards,<br> tomates,<br> fromage feta,<br> salade d'accompagnement,<br> pain complet</p>
-        <p><strong>Prix :</strong> 7,50 $ CAD</p>
-        <hr>
-    </div>
-</body>
-</html>
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+tr:hover {
+    background-color: #555;
+}
