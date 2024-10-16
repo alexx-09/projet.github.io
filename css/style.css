@@ -82,6 +82,10 @@ h2 {
 	font-size:30px;
 }
 
+.biographie p {
+	font-size:30px;
+}
+
 /* Lignes de tableau cliquables */
 tr.clickable-row {
 	cursor: pointer;
