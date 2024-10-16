@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
 <head>
-    <title>Menu</title>
     <meta charset="utf-8">
-    <link rel='stylesheet' href='css/style.css'>
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Barre de navigation -->
     <div class="sidebar">
         <a href="index.html">Page Principale</a>
         <a href="poeme.html">Poème</a>
@@ -14,95 +15,94 @@
         <a href="biographie.html">Biographie</a>
     </div>
 
+    <!-- Contenu Principal -->
     <div class="content">
         <h2>Menu</h2>
 
-        <!-- Tableau cliquable avec contenus -->
-        <table border="1" style="width: 60%; margin: 0 auto; text-align: left;">
-            <tr>
-                <th>Jour</th>
-                <th>Nom du Plat</th>
-                <th>Prix</th>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour1';">
-                <td>Jour 1</td>
-                <td>Salade de Poulet Grillé</td>
-                <td>12,50 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour2';">
-                <td>Jour 2</td>
-                <td>Tofu Sauté et Légumes</td>
-                <td>10,00 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour3';">
-                <td>Jour 3</td>
-                <td>Ragoût de Bœuf et Légumes</td>
-                <td>15,00 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour4';">
-                <td>Jour 4</td>
-                <td>Curry de Lentilles et Légumes</td>
-                <td>9,00 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour5';">
-                <td>Jour 5</td>
-                <td>Saumon Cuit au Four avec Asperges</td>
-                <td>18,00 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour6';">
-                <td>Jour 6</td>
-                <td>Wrap de Pois Chiches et Avocat</td>
-                <td>8,50 $ CAD</td>
-            </tr>
-            <tr class="clickable-row" onclick="window.location='#jour7';">
-                <td>Jour 7</td>
-                <td>Frittata de Légumes et Fromage</td>
-                <td>7,50 $ CAD</td>
-            </tr>
+        <!-- Tableau avec contenus cliquables -->
+        <table style="width: 60%; margin: 0 auto; text-align: left;">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Nom du Plat</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Chaque ligne du tableau représente un plat et est cliquable -->
+                <tr class="clickable-row" onclick="window.location='#jour1';" tabindex="0">
+                    <td>Jour 1</td>
+                    <td>Salade de Poulet Grillé</td>
+                    <td>12,50 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour2';" tabindex="0">
+                    <td>Jour 2</td>
+                    <td>Tofu Sauté et Légumes</td>
+                    <td>10,00 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour3';" tabindex="0">
+                    <td>Jour 3</td>
+                    <td>Ragoût de Bœuf et Légumes</td>
+                    <td>15,00 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour4';" tabindex="0">
+                    <td>Jour 4</td>
+                    <td>Curry de Lentilles et Légumes</td>
+                    <td>9,00 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour5';" tabindex="0">
+                    <td>Jour 5</td>
+                    <td>Saumon Cuit au Four avec Asperges</td>
+                    <td>18,00 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour6';" tabindex="0">
+                    <td>Jour 6</td>
+                    <td>Wrap de Pois Chiches et Avocat</td>
+                    <td>8,50 $ CAD</td>
+                </tr>
+                <tr class="clickable-row" onclick="window.location='#jour7';" tabindex="0">
+                    <td>Jour 7</td>
+                    <td>Frittata de Légumes et Fromage</td>
+                    <td>7,50 $ CAD</td>
+                </tr>
+            </tbody>
         </table>
 
-        <!-- Plat 1 -->
+        <!-- Détails des plats -->
         <h3 id="jour1">Jour 1 : Salade de Poulet Grillé</h3>
-        <p><strong>Ingrédients :</strong> Poitrine de poulet grillée,<br><br> feuilles mélangées (épinards, roquette, romaine),<br><br> tomates cerises,<br><br> concombre,<br><br> avocat,<br><br> vinaigrette à l'huile d'olive et au vinaigre balsamique,<br><br> quinoa en accompagnement</p>
+        <p><strong>Ingrédients :</strong> Poitrine de poulet grillée,<br> feuilles mélangées (épinards, roquette, romaine),<br> tomates cerises,<br> concombre,<br> avocat,<br> vinaigrette à l'huile d'olive et au vinaigre balsamique,<br> quinoa en accompagnement</p>
         <p><strong>Prix :</strong> 12,50 $ CAD</p>
         <hr>
 
-        <!-- Plat 2 -->
         <h3 id="jour2">Jour 2 : Tofu Sauté et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Tofu ferme,<br><br> brocoli,<br><br> poivrons,<br><br> pois mange-tout,<br><br> ail,<br><br> gingembre,<br><br> sauce soja,<br><br> riz brun</p>
+        <p><strong>Ingrédients :</strong> Tofu ferme,<br> brocoli,<br> poivrons,<br> pois mange-tout,<br> ail,<br> gingembre,<br> sauce soja,<br> riz brun</p>
         <p><strong>Prix :</strong> 10,00 $ CAD</p>
         <hr>
 
-        <!-- Plat 3 -->
         <h3 id="jour3">Jour 3 : Ragoût de Bœuf et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Morceaux de bœuf maigre,<br><br> carottes,<br><br> pommes de terre,<br><br> céleri,<br><br> oignon,<br><br> ail,<br><br> bouillon de bœuf,<br><br> herbes (thym, laurier),<br><br> pain complet</p>
+        <p><strong>Ingrédients :</strong> Morceaux de bœuf maigre,<br> carottes,<br> pommes de terre,<br> céleri,<br> oignon,<br> ail,<br> bouillon de bœuf,<br> herbes (thym, laurier),<br> pain complet</p>
         <p><strong>Prix :</strong> 15,00 $ CAD</p>
         <hr>
 
-        <!-- Plat 4 -->
         <h3 id="jour4">Jour 4 : Curry de Lentilles et Légumes</h3>
-        <p><strong>Ingrédients :</strong> Lentilles,<br><br> tomates en dés,<br><br> lait de coco,<br><br> épices à curry,<br><br> épinards,<br><br> poivrons,<br><br> riz basmati</p>
+        <p><strong>Ingrédients :</strong> Lentilles,<br> tomates en dés,<br> lait de coco,<br> épices à curry,<br> épinards,<br> poivrons,<br> riz basmati</p>
         <p><strong>Prix :</strong> 9,00 $ CAD</p>
         <hr>
 
-        <!-- Plat 5 -->
         <h3 id="jour5">Jour 5 : Saumon Cuit au Four avec Asperges</h3>
-        <p><strong>Ingrédients :</strong> Filet de saumon,<br><br> citron,<br><br> herbes,<br><br> asperges rôties,<br><br> quinoa ou patate douce</p>
+        <p><strong>Ingrédients :</strong> Filet de saumon,<br> citron,<br> herbes,<br> asperges rôties,<br> quinoa ou patate douce</p>
         <p><strong>Prix :</strong> 18,00 $ CAD</p>
         <hr>
 
-        <!-- Plat 6 -->
         <h3 id="jour6">Jour 6 : Wrap de Pois Chiches et Avocat</h3>
-        <p><strong>Ingrédients :</strong> Avocat écrasé,<br><br> pois chiches,<br><br> citron vert,<br><br> coriandre,<br><br> tortilla de blé complet,<br><br> laitue,<br><br> tomate,<br><br> concombre,<br><br> frites de patate douce</p>
+        <p><strong>Ingrédients :</strong> Avocat écrasé,<br> pois chiches,<br> citron vert,<br> coriandre,<br> tortilla de blé complet,<br> laitue,<br> tomate,<br> concombre,<br> frites de patate douce</p>
         <p><strong>Prix :</strong> 8,50 $ CAD</p>
         <hr>
 
-        <!-- Plat 7 -->
         <h3 id="jour7">Jour 7 : Frittata de Légumes et Fromage</h3>
-        <p><strong>Ingrédients :</strong> Œufs,<br><br> épinards,<br><br> tomates,<br><br> fromage feta,<br><br> salade d'accompagnement,<br><br> pain complet</p>
+        <p><strong>Ingrédients :</strong> Œufs,<br> épinards,<br> tomates,<br> fromage feta,<br> salade d'accompagnement,<br> pain complet</p>
         <p><strong>Prix :</strong> 7,50 $ CAD</p>
         <hr>
-
     </div>
 </body>
 </html>
