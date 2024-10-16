@@ -76,6 +76,11 @@ h2 {
 	font-size: 30px;
 }
 
+/* Texte poème */
+.poeme p {
+	font-size:30px;
+}
+
 /* Lignes de tableau cliquables */
 tr.clickable-row {
 	cursor: pointer;
@@ -99,9 +104,4 @@ th {
 
 tr:hover {
 	background-color: #555;
-}
-
-/* Texte poème */
-.text-poeme {
-	font-size: 30px;
 }
