@@ -31,6 +31,7 @@ body {
 /* Lien actif */
 .sidebar a.active {
 	background-image: url('https://www.mirasafety.com/cdn/shop/articles/Is_Hiroshima_still_radioactive.png?v=1739993337');
+	background-position: fixed;
 	background-color: #808080;
 	color: white;
 }
