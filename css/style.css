@@ -111,7 +111,7 @@ tr:hover {
 	background-color: #555;
 }
 
-bgimg {
+body.bgimg {
 	background-image: url('https://cdn.theatlantic.com/thumbor/OBg5Kz0P9zkXmQm5Zw9O0W9TU0s=/900x593/media/img/photo/2016/05/hiroshima-before-and-after-the-atom/h17_0284/original.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
