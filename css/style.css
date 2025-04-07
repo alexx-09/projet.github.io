@@ -30,7 +30,7 @@ body {
 
 /* Lien actif */
 .sidebar a.active {
-	background-color: #ADD8E6;
+	background-color: #808080;
 	color: white;
 }
 
