@@ -112,7 +112,6 @@ tr:hover {
 }
 
 body.bgimg {
-	background-image: url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/10110/production/_84680856_hi027729194.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	color: white;
+	background-color: #808080;
 }
